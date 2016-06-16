@@ -1,5 +1,16 @@
 $( document ).ready(function() {
-  siteOptions.setHeights();
-  siteOptions.socialLinks.struct();
-  siteOptions.socialLinks.fill();
+
+	/* Sidebar height set */
+	$('.sidebar').css('min-height',$(document).height());
+
+	/* Secondary contact links */
+	var scontacts = $('#contact-list-secondary');
+	var contact_list = $('#contact-list');
+	
+	scontacts.hide();
+	
+	contact_list.mouseenter(function(){ scontacts.fadeIn(); });
+	
+	contact_list.mouseleave(function(){ scontacts.fadeOut(); });
+
 });
