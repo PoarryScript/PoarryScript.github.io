@@ -11,20 +11,18 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: XXX的博客
+      title: Poarry的博客
 
 description: Stay hungry,Stay foolish.
 # gavatar头像及favicon
-gavatar: /assets/ico/avatar.jpg
-favicon: /assets/ico/avatar.jpg
+gavatar: /assets/ico/avatar.png
+favicon: /assets/ico/avatar.png
 
 author:
   name: Poarry
-  bio: ZhangLifeng
   github: Poarry
-  weibo: 1902153302
+  weibo: 波波_1936
   wechat: xy_zlf
-  csdn: zlfxy
   qq: 719151128
   email: 719151128@qq.com
 
