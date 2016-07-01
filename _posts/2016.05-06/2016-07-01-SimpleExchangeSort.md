@@ -22,7 +22,8 @@ tags: [algorithm]
 >    1、确定数组索引第一个最为当前需要比较的数，其索引为mCurrentIndex =0； <br />
 >  2、 比较arrays[mCurrentIndex]和arrays[mCurrentIndex+1] 位置上的数值大小<br />
 >  3、如果arrays[mCurrentIndex]大于arrays[mCurrentIndex+1]，则交换。<br />
->  4、要比较的数值移动一位，即 mCurrentIndex++；直到mCurrentIndex==arrays.length。<br />
+>  4、要比较的数值移动一位，即 mCurrentIndex++；<br />
+>  5、重复2~4直到mCurrentIndex==arrays.length。<br />
 
 ##  交换排序法(冒泡排序)(JAVA)代码 
     `/**
