@@ -22,7 +22,7 @@ tags: [algorithm]
 	 * 
 	 */
 	public class InsertSort {
-	public int[] InsertSort(int[] arrays) {
+	  public int[] InsertSort(int[] arrays) {
 		if(arrays==null||arrays.length<2){
 			return arrays;
 		}
@@ -39,7 +39,7 @@ tags: [algorithm]
 			}
 		}
 		return arrays;
-	}
+	  }
 
 	}`
 

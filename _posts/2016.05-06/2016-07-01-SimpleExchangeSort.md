@@ -51,4 +51,3 @@ tags: [algorithm]
 		return array;
 	}
 	}`
-<img src="/assets/ico/wechat_qrcode.jpg"  alt="pic" />
