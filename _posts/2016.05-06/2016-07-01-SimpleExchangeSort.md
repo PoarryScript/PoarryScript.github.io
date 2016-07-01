@@ -26,12 +26,13 @@ tags: [algorithm]
 >  5、重复2~4直到mCurrentIndex==arrays.length。<br />
 
 ##  交换排序法(冒泡排序)(JAVA)代码 
-    `/**
- * 交换排序(冒泡排序)
- * @author Poarry
- *
- */
-public class SimpleExchangeSort {
+  `/**
+	 *  交换排序(冒泡排序)
+	 * 
+	 * @author Poarry
+	 * 
+	 */
+	public class SimpleExchangeSort {
 
 	public int[] SimpleExchangeSort(int[] array) {
 		if(array.length<=1){
@@ -50,9 +51,5 @@ public class SimpleExchangeSort {
 		return array;
 	}
 
-
-
-}
-`
-
+}`
 <img src="/assets/ico/wechat_qrcode.jpg"  alt="pic" />
