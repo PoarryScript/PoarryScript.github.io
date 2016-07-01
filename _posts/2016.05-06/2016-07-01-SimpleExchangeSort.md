@@ -16,13 +16,13 @@ tags: [algorithm]
  通过比较相邻数据大小来排序。<br />
 
 
-<br/>2、交换排序法(冒泡排序)具体步骤 <br />
-**> 升序排序步骤如下：<br/>
-> 条件： 当前有未排序数据arrays[];<br/>
->   1、确定数组索引第一个最为当前需要比较的数，其索引为mCurrentIndex =0； <br />
-> 2、 比较arrays[mCurrentIndex]和arrays[mCurrentIndex+1] 位置上的数值大小<br />
-> 3、如果arrays[mCurrentIndex]大于arrays[mCurrentIndex+1]，则交换。<br />
-> 4、要比较的数值移动一位，即 mCurrentIndex++；直到mCurrentIndex==arrays.length。<br />**
+##交换排序法(冒泡排序)具体步骤 <br />
+>  升序排序步骤如下：<br/>
+>  条件： 当前有未排序数据arrays[];<br/>
+>    1、确定数组索引第一个最为当前需要比较的数，其索引为mCurrentIndex =0； <br />
+>  2、 比较arrays[mCurrentIndex]和arrays[mCurrentIndex+1] 位置上的数值大小<br />
+>  3、如果arrays[mCurrentIndex]大于arrays[mCurrentIndex+1]，则交换。<br />
+>  4、要比较的数值移动一位，即 mCurrentIndex++；直到mCurrentIndex==arrays.length。<br />
 
 ##  交换排序法(冒泡排序)(JAVA)代码 
     `/**
