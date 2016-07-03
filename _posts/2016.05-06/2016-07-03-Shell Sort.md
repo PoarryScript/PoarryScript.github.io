@@ -1,67 +1,52 @@
 ---
 layout: post
-title: 希尔排序
+title: 希尔排序（Shell）
 date: 2016-07-03  20:03:23 
 categories: [algorithm]
 tags: [algorithm]
 ---
 
-把数据列按照一定间隔分组而进行排序
+把数据列按照一定间隔分组，组内通过比较大小进行排序而进行排序
 <!--more-->
 
-##  欧几里得相除法介绍(Euclid)
+##  希尔排序（Shell）
 
-1、什么是最大公约数介绍 
-
- 
- 两个数的最大公约数就是先求各自的约数，然后找出两个数共同约数中最大的公约数。<br />
-> 比如 12 和18 的最大公约数是6：<br />
->   18的公约数有1 ，2，3,6,9<br />
->   12的公约数有1 ，2，3,4,6,
-
-<br/>2、欧几里得相除法求两个数的最大公约数步骤 <br />
-  *** 
-> 已知整数X和Y(X>=Y),X除以Y的余数是R,X和Y的最大公约数与Y和R的最大公约数相等。X和0的最大公约数是X。
-
-这样求整数X和Y(X>=Y)的最大公约数GCD的算法步骤如下：<br/>
-1. 变量R是X除以Y的余数<br/>
-2. 变量R不是0的时候，反复执行3-5<br/>
-3. 将变量Y赋值给X<br/>
-4. 将变量R赋值给Y<br/>
-5. 变量R是X除以Y的余数<br/>
-6. 变量GCD为变量Y的值<br/>
+<br />
+  希尔排序不是对紧挨着的数据顺序进行排序，而是把有相隔固定距离的数据分为一组，组内进行大小比较并排序，希尔排序与交换排序和插入排序相比稍微复杂一点，但是值得交换处理次数与其它排序比起来能得到很好的控制，所以执行速度很快。<br/>
+ 对一列有N个元素的数列进行排序时，分割的距离可以取任意数，在这里取数据间隔为N/2。这一组的间隔在对组内数据排序结束后，可以缩短为之前的1/2，即N/2,N/4,N/6,N/8,...
 <br/>
 
-##  欧几里得相除法求最大公约数(JAVA)代码(Euclid) 
+##  希尔排序（Shell）(JAVA)代码 
     `/**
-	 * 欧几里得相除法求最大公约数
-	 * 
-	 * @author Poarry
-	 * 
-	 */
-	private int greatestCommonDivisor(int paramsA, int paramsB) {
-		int tempRemainder = -1;
-		int firstParams;
-		int secondParams;
-		if (paramsA == 0 || paramsB == 0) {
-			return paramsA > 0 ? paramsA : paramsB;
-		}
+ 	* 希尔排序
+ 	* @author Poarry
+ 	*
+ 	*/
+	public class ShellSort {
 
-		if (paramsA > paramsB) {
-			firstParams = paramsA;
-			secondParams = paramsB;
-		} else {
-			firstParams = paramsB;
-			secondParams = paramsA;
+	public int[] ShellSort(int[] arrays) {
+		if(arrays==null){
+			return null ;
 		}
-		
-		while(tempRemainder!=0){
-			tempRemainder = firstParams%secondParams;
-			System.out.println("--------"+tempRemainder);
-			firstParams = secondParams;
-			secondParams =tempRemainder;
+		int length = arrays.length;
+		int h = 1;
+		while (h<length/3) {
+			h=3*h+1;
+			
 		}
-		return firstParams;
+		while (h>=1) {
+			for (int i = h; i < length; i++) {
+				for (int j = 0; j >=h&&arrays[j]<arrays[j-h]; j-=h) {
+					int temps = arrays[j];
+					arrays[j]=arrays[j-h];
+					arrays[j-h]=temps;
+				}
+				h=h/3;
+			}
+			
+		}
+		return arrays;				
+	}
+
 	}`
 
-<img src="/assets/ico/wechat_qrcode.jpg"  alt="pic" />
