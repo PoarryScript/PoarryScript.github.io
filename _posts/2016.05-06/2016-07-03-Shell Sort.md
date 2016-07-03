@@ -1,0 +1,67 @@
+---
+layout: post
+title: 欧几里得相除法求2个数的最大公约数
+date: 2016-06-30  0:26:18 
+categories: [algorithm]
+tags: [algorithm]
+---
+
+欧几里得相除法求2个数的最大公约数
+<!--more-->
+
+##  欧几里得相除法介绍(Euclid)
+
+1、什么是最大公约数介绍 
+
+ 
+ 两个数的最大公约数就是先求各自的约数，然后找出两个数共同约数中最大的公约数。<br />
+> 比如 12 和18 的最大公约数是6：<br />
+>   18的公约数有1 ，2，3,6,9<br />
+>   12的公约数有1 ，2，3,4,6,
+
+<br/>2、欧几里得相除法求两个数的最大公约数步骤 <br />
+  *** 
+> 已知整数X和Y(X>=Y),X除以Y的余数是R,X和Y的最大公约数与Y和R的最大公约数相等。X和0的最大公约数是X。
+
+这样求整数X和Y(X>=Y)的最大公约数GCD的算法步骤如下：<br/>
+1. 变量R是X除以Y的余数<br/>
+2. 变量R不是0的时候，反复执行3-5<br/>
+3. 将变量Y赋值给X<br/>
+4. 将变量R赋值给Y<br/>
+5. 变量R是X除以Y的余数<br/>
+6. 变量GCD为变量Y的值<br/>
+<br/>
+
+##  欧几里得相除法求最大公约数(JAVA)代码(Euclid) 
+    `/**
+	 * 欧几里得相除法求最大公约数
+	 * 
+	 * @author Poarry
+	 * 
+	 */
+	private int greatestCommonDivisor(int paramsA, int paramsB) {
+		int tempRemainder = -1;
+		int firstParams;
+		int secondParams;
+		if (paramsA == 0 || paramsB == 0) {
+			return paramsA > 0 ? paramsA : paramsB;
+		}
+
+		if (paramsA > paramsB) {
+			firstParams = paramsA;
+			secondParams = paramsB;
+		} else {
+			firstParams = paramsB;
+			secondParams = paramsA;
+		}
+		
+		while(tempRemainder!=0){
+			tempRemainder = firstParams%secondParams;
+			System.out.println("--------"+tempRemainder);
+			firstParams = secondParams;
+			secondParams =tempRemainder;
+		}
+		return firstParams;
+	}`
+
+<img src="/assets/ico/wechat_qrcode.jpg"  alt="pic" />
