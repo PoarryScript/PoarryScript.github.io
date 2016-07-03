@@ -1,0 +1,25 @@
+---
+layout: post
+title: 第一篇测试文章
+date: 2016-06-16 21:50:00
+categories: [others]
+tags: [others]
+---
+
+第一篇测试文章
+<!--more-->
+
+##  测试
+
+
+1、格式测试 
+{% highlight java %}
+格式测试
+{% endhighlight java %}
+
+
+
+##  图片测试
+
+
+<img src="/assets/ico/wechat_qrcode.jpg"  alt="pic" />
