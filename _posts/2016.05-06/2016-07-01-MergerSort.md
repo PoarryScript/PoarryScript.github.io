@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 归并排序（Merger）
-date: 2016-07-03  21:01:01 
+date: 2016-07-1  21:01:01 
 categories: [algorithm]
 tags: [algorithm]
 ---
@@ -9,12 +9,12 @@ tags: [algorithm]
 归并排序
 <!--more-->
 
-##  插入排序介绍(Insert Sort)
+##  归并排序(Merger Sort)
 
 简单插入法是向已排序部分的数列中的大小关系正确的位置插入数据的排序算法
 
 
-##  插入排序(JAVA)代码(Insert Sort) 
+##  归并排序(JAVA)代码(Merger Sort) 
      `/**
 	 * 插入排序
 	 * 
