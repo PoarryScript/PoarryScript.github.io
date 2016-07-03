@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 欧几里得相除法求2个数的最大公约数
-date: 2016-06-30  0:26:18 
+title: 希尔排序
+date: 2016-07-03  20:03:23 
 categories: [algorithm]
 tags: [algorithm]
 ---
 
-欧几里得相除法求2个数的最大公约数
+把数据列按照一定间隔分组而进行排序
 <!--more-->
 
 ##  欧几里得相除法介绍(Euclid)
