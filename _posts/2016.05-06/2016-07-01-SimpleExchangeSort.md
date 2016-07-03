@@ -34,7 +34,7 @@ tags: [algorithm]
 	 */
 	public class SimpleExchangeSort {
 
-	public int[] SimpleExchangeSort(int[] array) {
+	  public int[] SimpleExchangeSort(int[] array) {
 		if(array.length<=1){
 			return array;
 		}
@@ -49,5 +49,5 @@ tags: [algorithm]
 			}
 		}
 		return array;
-	}
+	 }
 	}`
