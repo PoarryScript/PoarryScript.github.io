@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 插入排序
-date: 2016-07-01  1:31:09 
+title: 归并排序（Merger）
+date: 2016-07-03  21:01:01 
 categories: [algorithm]
 tags: [algorithm]
 ---
 
-插入排序
+归并排序
 <!--more-->
 
 ##  插入排序介绍(Insert Sort)
