@@ -15,7 +15,7 @@ Dbyll for Ghost is now available. Get it [here](https://github.com/dbtek/dbyll-g
 - Glyphicon and Font-Awesome Icons.
 - Pagination.
 - Syntax highlighting with pygments.
-- Disqus comments.
+- Disqus comments.  
 
 
 ### Download
