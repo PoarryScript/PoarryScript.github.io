@@ -1,13 +1,10 @@
 ---
 layout: post
-
----
-layout: post
 title: Scheme简介和开发工具介绍
 date: 2017-05-02 21:50:00
 categories: [Scheme]
 tags: [Scheme]
-----------
+---
 
 ## 简介 ##
    **Scheme**是由Gerald J. Sussman 和 Guy L. Steel Jr. 在1975发明的一种编程语言(programming lanugage),[Scheme](https://zh.wikipedia.org/wiki/Scheme "Scheme")是一种函数式编程语言，是Lisp的两种方言之一。
